@@ -7,9 +7,11 @@ const ingredients = [
   'Condiments',
 ];
 const liIngredients = document.querySelector("#ingredients")
+const markup =[]
 ingredients.forEach((ingredient)=>
 {const liItem = document.createElement("li");
 
 liItem.textContent = `${ingredient}`;
 liItem.classList.add=("item")
-liIngredients.append(liItem)})
+markup.push(liItem)})
+liIngredients.append(...markup)

@@ -8,6 +8,6 @@ const itemstwo = document.querySelectorAll("#categories.item");
 items.forEach((item) =>{
     const headerTitle = item.querySelector("h2").textContent;
     const numberOfElements = item.querySelectorAll("li").length;
-    console.log(`Categories:, ${headerTitle}`);
-    console.log(`Elements:, ${numberOfElements}`);
+    console.log(`Categories: ${headerTitle}`);
+    console.log(`Elements: ${numberOfElements}`);
 })
